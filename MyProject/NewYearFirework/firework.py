@@ -3,6 +3,7 @@ import pygame
 import random
 import math
 import time
+import datetime
 
 pygame.init()
 
@@ -21,7 +22,7 @@ def choose_random_color():
     return r, g, b
 
 
-class Streak():
+class Streak:
     def __init__(self, x, y, color):
         self.color = color
         self.x = x
@@ -53,7 +54,7 @@ class Streak():
         pygame.draw.line(display, self.color, a, b, 1)
 
 
-class Firework():
+class Firework:
     def __init__(self):
         self.x = random.randint(0, 800)
         self.y = 500
@@ -90,20 +91,34 @@ def update_time():
     return start, end
 
 
+def play_music():
+    pygame.mixer.init()
+    bmg = pygame.mixer.Sound("sound/HappyNewYear.mp3")
+    sound = pygame.mixer.Sound("sound/firework_sound.mp3")
+    bmg.play(loops=0)
+    sound.play(loops=1000)
+    sound.set_volume(0.15)
+
+
 def game():
     start_time, end_time = update_time()
     fireworks = [Firework()]
     streaks = []
     pos = 0
+    show_time = '00:00:00'
+    music_time = datetime.datetime.now()
+    while str(music_time.time()) < show_time:
+        music_time = datetime.datetime.now()
+    play_music()
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
 
+        display.fill((0, 0, 0))
+
         if random.uniform(0, 1) <= 1 / 60:
             fireworks.append(Firework())
-
-        display.fill((0, 0, 0))
 
         for firework in fireworks:
             firework.move()
@@ -112,11 +127,13 @@ def game():
                 colors = choose_random_color()
                 streaks += [Streak(firework.x, firework.y, colors) for i in range(random.randint(20, 40))]
                 fireworks.remove(firework)
+
         for streak in streaks:
             streak.move()
             streak.draw()
             if streak.ended:
                 streaks.remove(streak)
+
         texts = ['HAPPY NEW YEAR', '2022', 'LOVE YOU']
         if start_time <= time.time() <= end_time:
             draw_text(texts[pos])
@@ -128,11 +145,5 @@ def game():
         clock.tick(FPS)
 
 
-pygame.mixer.init()
-bmg = pygame.mixer.Sound("sound/HappyNewYear.mp3")
-sound = pygame.mixer.Sound("sound/firework_sound.mp3")
-bmg.play(loops=0)
-sound.play(loops=1000)
-sound.set_volume(0.15)
 game()
 pygame.quit()
