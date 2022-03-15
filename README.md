@@ -19,6 +19,9 @@ Where I put personal projects, coding exercises, ...  :smiley:
       * name.txt: (list or) name mp3 file will have after converting
       * url.txt: (list or) url link to youtube video want to convert
   * Using Streamlit to do some project in school 
-      * Information Retrieval [IR Application](https://share.streamlit.io/dxmai/ir/main)
-      * Computer Vision [Search Image Application](https://share.streamlit.io/dxmai/cs231.m22.khcl/main)
-
+      * Information Retrieval
+           * [Repository](https://github.com/dxmai/IR)
+           * [IR Application](https://share.streamlit.io/dxmai/ir/main)
+      * Computer Vision 
+           * [Repository](https://github.com/dxmai/CS231.M22.KHCL)
+           * [Search Image Application](https://share.streamlit.io/dxmai/cs231.m22.khcl/main)
