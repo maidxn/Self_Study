@@ -1,3 +1,0 @@
-express = input()
-eval(express)
-

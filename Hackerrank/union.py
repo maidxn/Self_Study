@@ -1,5 +1,0 @@
-sizeSetA = int(input())
-setA = set(input().split())
-sizeSetB = int(input())
-setB = set(input().split())
-print(len(setA.union(setB)))

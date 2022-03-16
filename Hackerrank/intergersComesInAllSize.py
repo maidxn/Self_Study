@@ -1,5 +1,0 @@
-firstNumber = int(input())
-firstPower = int(input())
-secondNumber = int(input())
-secondPower = int(input())
-print(pow(firstNumber, firstPower) + pow(secondNumber, secondPower))
