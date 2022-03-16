@@ -1,0 +1,3 @@
+express = input()
+eval(express)
+
