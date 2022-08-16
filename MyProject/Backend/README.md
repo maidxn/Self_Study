@@ -1,5 +1,7 @@
 # Some commands
 
+[Source Tutorial Video](https://www.youtube.com/watch?v=jBzwzrDvZ18)
+
 * **pip install virtualenvwrapper-win** - install the module that creates virtual enviroment
 
 * **mkvirtualenv *name_of_enviroment*** - create a virtual enviroment which has *name*
@@ -50,4 +52,4 @@ These 2 step are necessary to make ANY CHANGES in models.py file
 username: maidgxn/ Pass: XuanMai0520
 
  
-
+[Setup Virtual Environment in VSCode](https://www.youtube.com/watch?v=vc-5H4B5C4M)
