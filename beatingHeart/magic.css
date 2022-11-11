@@ -1,0 +1,44 @@
+body{
+background-color: #000;
+padding: 0;
+margin: 0;
+}
+.fa-heart:hover {
+    opacity: 0.4;
+}
+
+.text{
+    position: relative;
+    top: 130px;
+    left:130px;
+    color: orange;
+    font-family: sans-serif;
+    font-size: 28px;
+    text-shadow:0 0 10px red, 0 0 50px red;
+    transform: translate(-50%,-50%);
+}
+
+
+.heart{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+i{
+    color: black;
+    font-size:250px;
+    text-shadow:0 0 10px salmon, 0 0 50px crimson;
+    animation: heartbeat 0.8s infinite;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(1.1);
+    }
+    30%{
+        transform: scale(1.7);
+    }
+    60%{
+        transform: scale(1.9);
+    }
+}
