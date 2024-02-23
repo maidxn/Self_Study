@@ -8,9 +8,7 @@ class Solution:
             digit = x % 10
             res = res * 10 + digit
             x = x // 10
-            print("RES", res)
         res = res if res.bit_length() < 32 else 0
-        print(res)
         return res if not negative else -res
             
         
