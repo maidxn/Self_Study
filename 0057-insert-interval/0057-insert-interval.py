@@ -4,8 +4,6 @@ class Solution:
         res = []
         
         for i in range(len(intervals)):
-            print("RES", res)
-            print(intervals[i])
             if newInterval[0] > intervals[i][1]:
                 res.append(intervals[i])
             elif newInterval[1] < intervals[i][0]:
@@ -13,7 +11,7 @@ class Solution:
                 return res + intervals[i:]
             else:
                 newInterval = [min(intervals[i][0], newInterval[0]), max(intervals[i][1], newInterval[1])]
-                print("U", newInterval)
+            
         res.append(newInterval)
         return res
         
