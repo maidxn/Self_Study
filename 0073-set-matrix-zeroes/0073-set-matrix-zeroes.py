@@ -9,7 +9,6 @@ class Solution:
                 if matrix[i][j] == 0:
                     indices.append([i, j])
         for index in indices:
-            print(index)
             for r in range(len(matrix)):
                 for c in range(len(matrix[0])):
                     if r == index[0] or c == index[1]:
