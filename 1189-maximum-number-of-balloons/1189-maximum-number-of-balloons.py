@@ -13,7 +13,6 @@ class Solution:
         res = float("inf")
         for each in dictionary:
             word = dictionary[each][1] // dictionary[each][0]
-            print("Word", word)
             res = min(res, word)
         return res
         
