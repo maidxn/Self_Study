@@ -8,8 +8,7 @@ class Solution:
             if nums[index] < 0 or nums[index] > N:
                 nums[index] = 0
         value = nums[0]
-
-                
+   
         for index in range(N):
             if nums[index] > 0: 
                 update_index = nums[index] % N - 1
