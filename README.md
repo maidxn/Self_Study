@@ -33,4 +33,20 @@ Where I put personal projects, coding exercises, ...  :smiley:
 |  |
 | ------- |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/maidxn/Self_Study/tree/master/1817-calculate-money-in-leetcode-bank) |
+## Array
+|  |
+| ------- |
+| [2169-simple-bank-system](https://github.com/maidxn/Self_Study/tree/master/2169-simple-bank-system) |
+## Hash Table
+|  |
+| ------- |
+| [2169-simple-bank-system](https://github.com/maidxn/Self_Study/tree/master/2169-simple-bank-system) |
+## Design
+|  |
+| ------- |
+| [2169-simple-bank-system](https://github.com/maidxn/Self_Study/tree/master/2169-simple-bank-system) |
+## Simulation
+|  |
+| ------- |
+| [2169-simple-bank-system](https://github.com/maidxn/Self_Study/tree/master/2169-simple-bank-system) |
 <!---LeetCode Topics End-->
