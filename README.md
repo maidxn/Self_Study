@@ -27,3 +27,10 @@ Where I put personal projects, coding exercises, ...  :smiley:
            * [Search Image Application](https://share.streamlit.io/dxmai/cs231.m22.khcl/main)
 
 [Personal website](https://mayd.space/)
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [1817-calculate-money-in-leetcode-bank](https://github.com/maidxn/Self_Study/tree/master/1817-calculate-money-in-leetcode-bank) |
+<!---LeetCode Topics End-->
